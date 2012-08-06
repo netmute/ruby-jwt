@@ -1,6 +1,5 @@
-require 'rubygems'
-require 'rake'
-require 'echoe'
+require 'bundler'
+Bundler.require :default, :test, :development
 
 Echoe.new('jwt', '0.1.5') do |p|
   p.description    = "JSON Web Token implementation in Ruby"
